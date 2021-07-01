@@ -1,0 +1,73 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?300588fc0ccc3b425d04c114e2b7ce3f") format("truetype"),
+url("./flaticon.woff?300588fc0ccc3b425d04c114e2b7ce3f") format("woff"),
+url("./flaticon.woff2?300588fc0ccc3b425d04c114e2b7ce3f") format("woff2"),
+url("./flaticon.eot?300588fc0ccc3b425d04c114e2b7ce3f#iefix") format("embedded-opentype"),
+url("./flaticon.svg?300588fc0ccc3b425d04c114e2b7ce3f#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "letrero": "\f101",
+    "informe": "\f102",
+    "dentadura": "\f103",
+    "implante-dental": "\f104",
+    "lupa": "\f105",
+    "diente": "\f106",
+    "facebook": "\f107",
+    "logotipo-de-instagram": "\f108",
+    "whatsapp": "\f109",
+    "dentista": "\f10a",
+    "telefono-inteligente": "\f10b",
+    "diente-1": "\f10c",
+);
+
+.flaticon-letrero:before {
+    content: map-get($flaticon-map, "letrero");
+}
+.flaticon-informe:before {
+    content: map-get($flaticon-map, "informe");
+}
+.flaticon-dentadura:before {
+    content: map-get($flaticon-map, "dentadura");
+}
+.flaticon-implante-dental:before {
+    content: map-get($flaticon-map, "implante-dental");
+}
+.flaticon-lupa:before {
+    content: map-get($flaticon-map, "lupa");
+}
+.flaticon-diente:before {
+    content: map-get($flaticon-map, "diente");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-logotipo-de-instagram:before {
+    content: map-get($flaticon-map, "logotipo-de-instagram");
+}
+.flaticon-whatsapp:before {
+    content: map-get($flaticon-map, "whatsapp");
+}
+.flaticon-dentista:before {
+    content: map-get($flaticon-map, "dentista");
+}
+.flaticon-telefono-inteligente:before {
+    content: map-get($flaticon-map, "telefono-inteligente");
+}
+.flaticon-diente-1:before {
+    content: map-get($flaticon-map, "diente-1");
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Fuentes-->
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<!--Iconocs-->
+	<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+	<title>SHIGOTO estetica dental</title>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="header__logo">
+			<div class="logo">
+				<a href="#conocenos"><img src="imagenes/logo.jpg" alt="logo"></a>
+			</div>
+			<div class=header__texto>
+				<h2>Laboratorio dental</h2>
+				<h3>especializado en estetica dental</h3>
+			</div>
+		</div>
+
+		<nav class="menu">
+			<ul>
+				<li><a class="activo" href=#conocenos>Conocenos</a></li>
+				<li><a href="Servicios.html">Nuestros servicios</a></li>
+				<li><a href="Casos clinicos.html">Casos Clinicos</a></li>
+				<li><a href="Cursos.html">Cursos</a></li>
+				<li><a href="Contacto.html">Contactanos</a></li>
+			</ul>	
+		</nav>
+	</header>
+
+	<main>
+		<div class="banner__index"> 
+			<div>
+				<h2>Art <br>& <br>Passion</h2>
+			</div>
+		</div>
+	
+
+
+		<div class="conocenos__texto" >
+			<span>Bienvenidos a Shigoto Dental.</span>
+			<p id="conocenos">
+				Somos un laboratorio especializado en estética dental, ubicado en la ciudad de
+				Azul. Ofrecemos nuestros servicios a Odontólogos, clínicas y colegas, a nivel nacional e internacional.
+			</p>
+		</div>
+	</main>
+
+	
+	<section class="grid">
+		<div id="img1">
+			<a href="Servicios.html"><img src="imagenes/img1.jpg" alt="servicios"></a>
+		</div>
+		<div id="text1">
+			<p>
+				Contamos con la última tecnología que nos permite trabajar con una amplia variedad de materiales según la necesidad de cada caso.
+				Eso sumado a nuestra metodologia de trabajo, nos permite ofrecerte el mejor servicio  y garantizarte cada entrega en tiempo, forma y de la más alta calidad.	
+			</p>
+			<span><a href="Servicios.html">❮❮ Ver nuestros servicios</a></span>
+		</div>
+	
+		<div id="img2" >
+			<a href="Casos clinicos.html"><img src="imagenes/img3.jpg" alt="casosClinicos"></a>
+		</div>
+		<div id="text2" >
+			<p>  Es nuestra prioridad en cada caso clínico ser fiel a la naturaleza de cada tejido, para así obtener resultados óptimos. Cada caso es único y ponemos al servicio de cada uno, toda nuestra tecnología y las técnicas más adecuadas para llegar a ese resultado. Te invitamos a ver algunos de nuestros casos clínicos. 
+			</p>
+			<span><a href="Casos clinicos.html">Ver nuestros casos clínicos ❯❯</a></span>
+		</div>
+		
+
+		<div id="img3" >
+			<a href="Cursos.html"><img src="imagenes/img4.jpg" alt="cursos"></a>
+		</div>
+		<div id="text3" >
+			<p>
+			Contamos con un área para el dictado de cursos. Todos nuestros cursos son con pacientes en vivo, muchas veces tomando como pacientes a los mismos asistentes, lo que hace que cada curso este basado en trabajos reales para que lo aprendido pueda ser llevado a la práctica diaria.
+			</p>
+			<span><a href="Cursos.html">❮❮ Enterate de todos nuesros cursos.</a></span>
+		</div>
+	</section>
+
+</body>
+
+<footer id="footer">
+
+	<div class="footer__contacto">
+		<div>
+			<h2>CONTACTANOS</h2>
+			<h3>Horarios de atención</h3>
+			<p>➜Lunes a viernes de 8 a 18 hs.</p>
+			<p>➜Sábados de 8 a 12 hs</p>
+			
+		</div>
+
+		<div>
+			<i class="flaticon-dentista">Hipolito Yrigoyen 795. AZUL</i>
+		</div>
+
+		<div>
+			<i class="flaticon-telefono-inteligente">02281-15590290</i>
+		</div>
+
+		<div>
+			<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.521632797769!2d-59.85918138497557!3d-36.78204178348283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959427716aa54f1b%3A0x7ea2bf60c71aedb4!2sHip%C3%B3lito%20Yrigoyen%20795%2C%20B7300%20Azul%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623349825718!5m2!1ses!2sar"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+			</iframe>
+		</div>
+	</div>
+
+	<div class=footer__form>
+		<form action="envia.php" method="POST"enctype="multipart/form-data">
+				<fieldset>
+					<label for="nombreyapellido">Nombre y apellido</label>
+					<input type="text" name="nombreyapellido" maxlength="100">
+					<br>
+					<label for="email">E-mail</label>
+					<input type="email" name="email" maxlength="100">
+					<br>
+					<br>
+					<div>Quiero recibir lista de aranceles vigentes</div>
+					<input type="checkbox" name="aranceles" value="1">
+					<br>
+					
+					<input type="submit" name="submit" value="Enviar">
+					<input type="reset" name="reset" value="Vaciar">
+				</fieldset>
+		</form>
+	</div>		
+
+	<div class="footer__menu">
+		<div>
+			<ul>
+				<li><a href="index.html">Conocenos</a></li>
+				<li><a href="Servicios.html">Nuestros servicios</a></li>
+				<li><a href="Casos clinicos.html">Casos Clinicos</a></li>
+				<li><a href="Cursos.html">Cursos</a></li>
+				<li><a href="Contacto.html">Contactanos</a></li>
+			</ul>
+		</div>
+		
+		<div>
+			<h2>Seguinos en nuestras redes</h2>
+		</div>
+		<div>
+			<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i class="flaticon-logotipo-de-instagram"></i></a>
+			<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i class="flaticon-facebook"></i></a>
+		</div>
+	</div>
+	
+		
+</footer>
+
+</html>
