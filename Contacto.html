@@ -17,6 +17,17 @@
 
 <body>
 	<header class="header">
+
+		<section class="header__logo" >
+			<div class="logo">
+				<a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+			</div>
+			<div class=header__texto>
+				<h3>Laboratorio dental</h3>
+				<h4>especializado en estetica dental</h4>
+			</div>
+		</section>
+
 		<nav class="menu">
 			<ul>
 				<li><a href="index.html">Conocenos</a></li>
@@ -26,7 +37,9 @@
 				<li><a class="activo" href="Contacto.html">Contactanos</a></li>
 			</ul>	
 		</nav>	
+		
 	</header>
+
 	<main>
 
 		<div class="banner">
@@ -35,7 +48,7 @@
 			</div>
 		</div>
 
-		<div class="contacto">
+		<section class="contacto">
 			<div class="contacto__texto">
 				<h3>Direccion</h3>
 				<p>Hipolito Yrigoyen 795. <br> Azul. Pcia. Buenos Aires</p>
@@ -50,72 +63,74 @@
 			<div class="contacto__mapa">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.521632797769!2d-59.85918138497557!3d-36.78204178348283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959427716aa54f1b%3A0x7ea2bf60c71aedb4!2sHip%C3%B3lito%20Yrigoyen%20795%2C%20B7300%20Azul%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623349825718!5m2!1ses!2sar"
-					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+					style="border:0;" allowfullscreen="" loading="lazy">
 				</iframe>
 			</div>
-		</div>	
+		</section>	
 
+	
+		<div class="contacto__form">
+			<form action="envia.php" method="POST" enctype="multipart/form-data">
+				<fieldset>
+					<label for="nombreyapellido">Nombre y apellido</label>
+					<input type="text" name="nombreyapellido" maxlength="100">
+					<br>
+					<label for="email">E-mail</label>
+					<input type="email" name="email" maxlength="100">
+					<br>
+					<label for="NumContacto">Telefono de contacto</label>
+					<input type="text" name="NumContacto" maxlength="30">
+					<br>
+					<div>Soy Odontologo</div>
+					<input type="radio" name="profesion" value="odontologo" />
+					<div>Soy TPD</div>
+					<input type="radio" name="profesion" value="TPD" />
+					<br>
+
+					<h4>Tipo de Consulta</h4>
+					<select name="tipoconsulta">
+						<option value="servicios">Servicios</option>
+						<option value="cursos">Cursos</option>
+					</select>
+					<br>
+					<br>
+					<textarea name="consulta" cols="30" rows="10">Deje aquí su consulta</textarea>
+					<br>
+					<div>Quiero recibir lista de aranceles vigentes</div>
+					<input type="checkbox" name="aranceles" value="1">
+					<br>
+					<br>
+					<input type="submit" name="submit" value="Enviar">
+					<input type="reset" name="reset" value="Vaciar">
+				</fieldset>
+			</form>
+		</div>
 	</main>
-	<div class="contacto__form">
-		<form action="envia.php" method="POST" enctype="multipart/form-data">
-			<fieldset>
-				<label for="nombreyapellido">Nombre y apellido</label>
-				<input type="text" name="nombreyapellido" maxlength="100">
-				<br>
-				<label for="email">E-mail</label>
-				<input type="email" name="email" maxlength="100">
-				<br>
-				<label for="NumContacto">Telefono de contacto</label>
-				<input type="text" name="NumContacto" maxlength="30">
-				<br>
-				<div>Soy Odontologo</div>
-				<input type="radio" name="profesion" value="odontologo" />
-				<div>Soy TPD</div>
-				<input type="radio" name="profesion" value="TPD" />
-				<br>
 
-				<h4>Tipo de Consulta</h4>
-				<select name="tipoconsulta">
-					<option value="servicios">Servicios</option>
-					<option value="cursos">Cursos</option>
-				</select>
-				<br>
-				<br>
-				<textarea name="consulta" cols="30" rows="10">Deje aquí su consulta</textarea>
-				<br>
-				<div>Quiero recibir lista de aranceles vigentes</div>
-				<input type="checkbox" name="aranceles" value="1">
-				<br>
-				<br>
-				<input type="submit" name="submit" value="Enviar">
-				<input type="reset" name="reset" value="Vaciar">
-			</fieldset>
-		</form>
-	</div>
+	<footer>
+
+		<div class="footer__menu">
+			
+				<ul>
+					<li><a href="index.html">Conocenos</a></li>
+					<li><a href="Servicios.html">Nuestros servicios</a></li>
+					<li><a href="Casos clinicos.html">Casos Clinicos</a></li>
+					<li><a href="Cursos.html">Cursos</a></li>
+					<li><a href="Contacto.html">Contactanos</a></li>
+				</ul>
+			
+			
+			<div>
+				<h2>Seguinos en nuestras redes</h2>
+			</div>
+			<div>
+				<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i class="flaticon-logotipo-de-instagram"></i></a>
+				<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i class="flaticon-facebook"></i></a>
+			</div>
+		</div>	
+	
+	</footer>
+
 </body>
-
-<footer id="footer">
-
-	<div class="footer__menu">
-		<div>
-			<ul>
-				<li><a href="index.html">Conocenos</a></li>
-				<li><a href="Servicios.html">Nuestros servicios</a></li>
-				<li><a href="Casos clinicos.html">Casos Clinicos</a></li>
-				<li><a href="Cursos.html">Cursos</a></li>
-				<li><a href="Contacto.html">Contactanos</a></li>
-			</ul>
-		</div>
-		
-		<div>
-			<h2>Seguinos en nuestras redes</h2>
-		</div>
-		<div>
-			<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i class="flaticon-logotipo-de-instagram"></i></a>
-			<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i class="flaticon-facebook"></i></a>
-		</div>
-	</div>	
-
-</footer>
 
 </html>
