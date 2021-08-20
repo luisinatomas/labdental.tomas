@@ -6,18 +6,26 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Meta etiquetas / SEO-->
+	<meta name="description"
+		content="Laboratorio dental especializado en alta estetica dental y bioemulación de los tejidos dentales">
+	<meta name="keywords"
+		content="laboratorio dental, estetica dental, protesis fija, protesis removible, cursos, implantología, cadCAM, frezado, tecnología">
+
 	<!--BOOTSTRAP-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
 	<!--CSS-->
 	<link rel="stylesheet" href="css/style.css">
 	<!--Fuentes-->
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-	<!--Iconocs-->
+	<!--Iconos-->
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<title>SHIGOTO estetica dental</title>
+	<title>SHIGOTO estética dental - Imitando la naturaleza</title>
 
 </head>
 
@@ -25,39 +33,30 @@
 
 	<header>
 		<section class="header__logo">
-			<!--MENU PANTALLAS PEQUEÑAS-->
-		<div class="dropdown">
-			<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ≡ </button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-			  <a class="dropdown-item" href="#conocenos">Conocenos</a>
-			  <a class="dropdown-item" href="Servicios.html">Nuestros Servicios</a>
-			  <a class="dropdown-item" href="Casos clinicos.html">Casos Clinicos</a>
-			  <a class="dropdown-item" href="Cursos.html">Cursos</a>
-			  <a class="dropdown-item" href="Contacto.html">Contactanos</a>
-			</div>
-		</div> 
+
 			<div class="logo">
-				<a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+				<a href="index.html"><img src="imagenes/logoshigoto.png" alt="logo"></a>
 			</div>
-			<!--SACAR PARA MOBILE-->
+
 			<div class="header__texto">
 				<h3>Laboratorio dental</h3>
 				<h4>especializado en estetica dental</h4>
 			</div>
-			
+
 		</section>
 
-		<nav class="menu">
-			<ul>
-				<li><a class="activo" href=#conocenos>Conocenos</a></li>
-				<li><a href="Servicios.html">Nuestros servicios</a></li>
-				<li><a href="Casos clinicos.html">Casos Clinicos</a></li>
-				<li><a href="Cursos.html">Cursos</a></li>
-				<li><a href="Contacto.html">Contactanos</a></li>
-			</ul>
-		</nav>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" class="active">Inicio</a>
+			<a href="Servicios.html">Servicios</a>
+			<a href="Casos clinicos.html">Casos clinicos</a>
+			<a href="Cursos.html">Cursos</a>
+			<a href="Contacto.html">Contactanos</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		</div>
 
-		
+
 	</header>
 
 	<main>
@@ -69,7 +68,7 @@
 
 
 
-		<div class="conocenos__texto" id="conocenos">
+		<div class="conocenos__texto">
 			<h1>Bienvenidos a Shigoto Dental.</h1>
 			<p>
 				Somos un laboratorio especializado en estética dental, ubicado en la ciudad de
@@ -80,22 +79,22 @@
 
 		<section class="grid">
 			<div id="img1">
-				<a href="Servicios.html"><img src="imagenes/img1.jpg" alt="servicios"></a>
+				<a href="Servicios.html"><img src="imagenes/index1.jpg" alt="esta imagen te lleva a la seccion servicios"></a>
 			</div>
 			<div id="text1">
 				<p>
 					Contamos con la última tecnología que nos permite trabajar con una amplia variedad de materiales
 					según
 					la necesidad de cada caso.
-					Eso sumado a nuestra metodologia de trabajo, nos permite ofrecerte el mejor servicio y garantizarte
+					Eso sumado a nuestra metodología de trabajo, nos permite ofrecerte el mejor servicio y garantizarte
 					cada
 					entrega en tiempo, forma y de la más alta calidad.
 				</p>
-				<span><a href="Servicios.html">❮❮ Ver nuestros servicios</a></span>
+				<span><a href="Servicios.html"> Ver nuestros servicios</a></span>
 			</div>
 
 			<div id="img2">
-				<a href="Casos clinicos.html"><img src="imagenes/img3.jpg" alt="casosClinicos"></a>
+				<a href="Casos clinicos.html"><img src="imagenes/index2.jpg" alt="esta imagen te lleva a la secion casos clinicos"></a>
 			</div>
 			<div id="text2">
 				<p> Es nuestra prioridad en cada caso clínico ser fiel a la naturaleza de cada tejido, para así obtener
@@ -104,12 +103,12 @@
 					técnicas más adecuadas para llegar a ese resultado. Te invitamos a ver algunos de nuestros casos
 					clínicos.
 				</p>
-				<span><a href="Casos clinicos.html">Ver nuestros casos clínicos ❯❯</a></span>
+				<span><a href="Casos clinicos.html">Ver nuestros casos clínicos</a></span>
 			</div>
 
 
 			<div id="img3">
-				<a href="Cursos.html"><img src="imagenes/img4.jpg" alt="cursos"></a>
+				<a href="Cursos.html"><img src="imagenes/index3.jpg" alt="esta imagen te lleva a la seccion cursos"></a>
 			</div>
 			<div id="text3">
 				<p>
@@ -119,41 +118,70 @@
 					trabajos
 					reales para que lo aprendido pueda ser llevado a la práctica diaria.
 				</p>
-				<span><a href="Cursos.html">❮❮ Enterate de todos nuesros cursos.</a></span>
+				<span><a href="Cursos.html"> Enterate de todos nuestros cursos.</a></span>
 			</div>
-		</section> 
+		</section>
 	</main>
 
 	<footer>
 
-		<div class="footer__menu">
+		<div class="footer">
 
-			<ul>
-				<li><a href="index.html">Conocenos</a></li>
-				<li><a href="Servicios.html">Nuestros servicios</a></li>
-				<li><a href="Casos clinicos.html">Casos Clinicos</a></li>
-				<li><a href="Cursos.html">Cursos</a></li>
-				<li><a href="Contacto.html">Contactanos</a></li>
-			</ul>
-
-
-			<div>
-				<h3>Seguinos en nuestras redes</h3>
+			<div class="contacto__texto">
+				<h4>Direccion</h4>
+				<p>Hipolito Yrigoyen 795. <br> Azul. Pcia. Buenos Aires</p>
+				<h4>Horarios</h4>
+				<ul>
+					<li>Lunes a viernes de 08 a 20 hs.</li>
+					<li>Sabados de 08 a 11 hs.</li>
+				</ul>
+				<h4>Telefono</h4>
+				<p>02281-15590290</p>
 			</div>
-			<div>
-				<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i
-						class="flaticon-logotipo-de-instagram"></i></a>
-				<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i
-						class="flaticon-facebook"></i></a>
+
+			<div class="footer__mapa">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.521632797769!2d-59.85918138497557!3d-36.78204178348283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959427716aa54f1b%3A0x7ea2bf60c71aedb4!2sHip%C3%B3lito%20Yrigoyen%20795%2C%20B7300%20Azul%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623349825718!5m2!1ses!2sar"
+					style="border:0;" allowfullscreen="" loading="lazy">
+				</iframe>
+			</div>
+
+			<div class="footer__menu">
+
+				<ul>
+					<li><a href="index.html">Conocenos</a></li>
+					<li><a href="Servicios.html">Nuestros servicios</a></li>
+					<li><a href="Casos clinicos.html">Casos Clinicos</a></li>
+					<li><a href="Cursos.html">Cursos</a></li>
+					<li><a href="Contacto.html">Contactanos</a></li>
+				</ul>
+
+				<div>
+					<h3>Seguinos en nuestras redes</h3>
+				</div>
+				
+				<div>
+					<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i
+							class="flaticon-logotipo-de-instagram"></i></a>
+					<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i
+							class="flaticon-facebook"></i></a>
+				</div>
+
 			</div>
 		</div>
 
 	</footer>
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		</script>
 </body>
 
 

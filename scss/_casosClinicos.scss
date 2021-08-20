@@ -1,0 +1,43 @@
+
+/*Casos clinicos*/
+
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    .card{
+        flex: 0 0 200px;
+        margin: 30px;
+        padding: 10px 10px 0;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+       
+        img{
+            max-width: 100%;
+        }
+
+        .text{
+            padding: 0 20px 20px;
+            font-family: 'PT Sans', sans-serif;
+
+            a{
+                background-color: $bg-1;       
+                border: 0;
+                border-radius: 3px;
+                color: white;
+                text-shadow: 1px 1px #73655A;
+                padding: 1px 40px;
+                text-decoration: none;
+                text-align: center;
+                font-family: 'PT Sans', sans-serif;
+
+            }
+
+        }
+
+    }
+}

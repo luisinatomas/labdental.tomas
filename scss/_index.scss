@@ -1,0 +1,164 @@
+.banner__index {
+    @extend %banner;
+    height: auto;
+    justify-content: center;
+
+    h2 {
+        font-size: 7rem;
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+
+        @media screen and (max-width:576px) {
+            font-size: 5rem;
+
+        }
+    }
+
+}
+
+
+.conocenos__texto {
+    font-family: $font-pr;
+    font-size: 25px;
+    text-align: center;
+    color: #73655A;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px 0px;
+
+    p {
+        @media screen and (min-width: 577px) and (max-width:768px) {
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 16px;
+
+        }
+
+    }
+
+
+    h1 {
+        font-family: 'Francois One', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        color: #F3F1E5;
+        text-shadow: 2px 2px 2px #73655A;
+
+        @media screen and (min-width: 577px) and (max-width:768px) {
+            font-size: 2rem;
+        }
+
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "img1 text1"
+        "text2 img2"
+        "img3 text3";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+
+    @media screen and (max-width:576px) {
+        display: grid;
+        grid-template-areas:
+            "img1"
+            "text1"
+            "img2"
+            "text2"
+            "img3"
+            "text3";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, auto)
+    }
+
+    @media screen and (min-width:577px) and (max-width:768px) {
+        display: grid;
+        grid-template-areas:
+            "img1 text1"
+            "img2 text2"
+            "img3 text3";
+        grid-template-columns: 30% auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 350px;
+        height: auto;
+
+        @media screen and (max-width:576px) {
+
+            width: 100%;
+            height: auto;
+        }
+
+        @media screen and (min-width:577px) and (max-width:768px) {
+            width: 200px;
+        }
+    }
+
+    p {
+        padding: 10px;
+        line-height: 30px;
+        font-size: 20px;
+        font-family: $font-pr;
+
+        @media screen and (min-width:577px) and (max-width:768px) {
+            padding: 10px;
+            line-height: 20px;
+            font-size: 1rem;
+        }
+
+    }
+
+    span {
+        a {
+            font-family: $font-pr;
+            text-decoration: none;
+            background-color: $bg-1;
+            color: #fff;
+            padding: 5px 10px;
+            margin: 10px 10px;
+            border-radius: 10px;
+        }
+    }
+
+}
+
+
+div#img1 {
+    grid-area: img1;
+}
+
+div#text1 {
+    grid-area: text1;
+}
+
+div#img2 {
+    grid-area: img2;
+}
+
+div#text2 {
+    grid-area: text2;
+}
+
+div#img3 {
+    grid-area: img3;
+}
+
+div#text3 {
+    grid-area: text3;
+}

@@ -10,6 +10,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<!--Iconos-->
 		<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Casos clinicos</title>
 	</head>
 
@@ -19,7 +21,7 @@
 
 		<section class="header__logo" >
 			<div class="logo">
-				<a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+				<a href="index.html"><img src="imagenes/logoshigoto.png" alt="logo"></a>
 			</div>
 			<div class=header__texto>
 				<h3>Laboratorio dental</h3>
@@ -27,15 +29,16 @@
 			</div>
 		</section>
 
-		<nav class="menu">
-			<ul>
-				<li><a href="index.html">Conocenos</a></li>
-				<li><a href="Servicios.html">Nuestros servicios</a></li>
-				<li><a class="activo" href="Casos clinicos.html">Casos Clinicos</a></li>
-				<li><a href="Cursos.html">Cursos</a></li>
-				<li><a href="Contacto.html">Contactanos</a></li>
-			</ul>	
-		</nav>	
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" >Conocenos</a>
+			<a href="Servicios.html">Servicios</a>
+			<a href="Casos clinicos.html" class="active">Casos clinicos</a>
+			<a href="Cursos.html">Cursos</a>
+			<a href="Contacto.html">Contactanos</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		</div>	
 		
 	</header>
 	
@@ -55,8 +58,8 @@
 			</div>
 			<div class="text">
 			<h3>Paciente 17 años</h3>
-			<p>Fracturó pieza 11 y 21 con sustratos desfavorables y minimo espesor</p>
-			<a href="#">Ver mas</a>
+			<p>Fractura en pieza 11 y 21 con sustratos desfavorables y minimo espesor</p>
+			<a href="https://www.facebook.com/photo/?fbid=3926240054097311&set=pcb.3926240397430610">Ver mas</a>
 			</div>
 		</article>
 
@@ -70,7 +73,7 @@
 			<div class="text">
 			<h3>Paciente 32 años</h3>
 			<p>Carilla, espesor 0,4</p>
-			<a href="#">Ver mas</a>
+			<a href="https://www.facebook.com/photo/?fbid=3964546123600037&set=pcb.3964546366933346">Ver mas</a>
 			</div>
 		</article>
 
@@ -82,9 +85,9 @@
 				<img src="imagenes/caso3fin.jpg" alt="Caso3Fin">
 			</div>
 			<div class="text">
-			<h3>Paciente 27 años</h3>
-			<p>AMANN GIRRBACH + CREATION ZICT, reducción vestibular de 0,4 técnica microlayering.4</p>
-			<a href="#">Ver mas</a>
+			<h3>Paciente 14 años</h3>
+			<p>AMANN GIRRBACH + CREATION ZICT, reducción vestibular de 0,4 técnica microlayering.</p>
+			<a href="https://www.facebook.com/photo/?fbid=4138394739548507&set=pcb.4138394876215160">Ver mas</a>
 			</div>
 		</article>
 
@@ -98,7 +101,7 @@
 			<div class="text">
 			<h3>Paciente 50 años</h3>
 			<p>AMANN GIRRBACH +CREATIOM.ZICT</p>
-			<a href="#">Ver mas</a>
+			<a href="https://www.facebook.com/photo/?fbid=2389883714399627&set=pcb.2389883951066270">Ver mas</a>
 			</div>
 		</article>
 
@@ -112,7 +115,7 @@
 			<div class="text">
 			<h3>Paciente 47 años</h3>
 			<p>AMANN GIRRBACH +CREATIOM.ZICT</p>
-			<a href="#">Ver mas</a>
+			<a href="https://www.facebook.com/photo/?fbid=3934923099895673&set=pcb.3934927029895280">Ver mas</a>
 			</div>
 		</article>
 
@@ -126,7 +129,7 @@
 			<div class="text">
 			<h3>Paciente 50 años</h3>
 			<p>AMANN GIRRBACH +CREATIOM.ZICT</p>
-			<a href="#">Ver mas</a>
+			<a href="https://www.facebook.com/photo/?fbid=2828166877237973&set=pcb.2828168007237860">Ver mas</a>
 			</div>
 		</article>
 		
@@ -135,8 +138,29 @@
 	
 	<footer>
 
-		<div class="footer__menu">
-			
+		<div class="footer">
+
+			<div class="contacto__texto">
+				<h4>Direccion</h4>
+				<p>Hipolito Yrigoyen 795. <br> Azul. Pcia. Buenos Aires</p>
+				<h4>Horarios</h4>
+				<ul>
+					<li>Lunes a viernes de 08 a 20 hs.</li>
+					<li>Sabados de 08 a 11 hs.</li>
+				</ul>
+				<h4>Telefono</h4>
+				<p>02281-15590290</p>
+			</div>
+
+			<div class="footer__mapa">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.521632797769!2d-59.85918138497557!3d-36.78204178348283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959427716aa54f1b%3A0x7ea2bf60c71aedb4!2sHip%C3%B3lito%20Yrigoyen%20795%2C%20B7300%20Azul%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623349825718!5m2!1ses!2sar"
+					style="border:0;" allowfullscreen="" loading="lazy">
+				</iframe>
+			</div>
+
+			<div class="footer__menu">
+
 				<ul>
 					<li><a href="index.html">Conocenos</a></li>
 					<li><a href="Servicios.html">Nuestros servicios</a></li>
@@ -144,18 +168,33 @@
 					<li><a href="Cursos.html">Cursos</a></li>
 					<li><a href="Contacto.html">Contactanos</a></li>
 				</ul>
-			
-			
-			<div>
-				<h2>Seguinos en nuestras redes</h2>
+
+				<div>
+					<h3>Seguinos en nuestras redes</h3>
+				</div>
+				
+				<div>
+					<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i
+							class="flaticon-logotipo-de-instagram"></i></a>
+					<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i
+							class="flaticon-facebook"></i></a>
+				</div>
+
 			</div>
-			<div>
-				<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i class="flaticon-logotipo-de-instagram"></i></a>
-				<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i class="flaticon-facebook"></i></a>
-			</div>
-		</div>	
-	
+		</div>
+
 	</footer>
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		</script>
 
 </body>
 

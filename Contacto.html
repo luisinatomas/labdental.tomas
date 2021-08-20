@@ -12,7 +12,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<!--Iconocs-->
 		<link rel="stylesheet" type="text/css" href="css/flaticon.css">
-	<title>Contacto</title>
+			<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Contacto</title>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
 
 		<section class="header__logo" >
 			<div class="logo">
-				<a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+				<a href="index.html"><img src="imagenes/logoshigoto.png" alt="logo"></a>
 			</div>
 			<div class=header__texto>
 				<h3>Laboratorio dental</h3>
@@ -28,15 +30,16 @@
 			</div>
 		</section>
 
-		<nav class="menu">
-			<ul>
-				<li><a href="index.html">Conocenos</a></li>
-				<li><a href="Servicios.html">Nuestros servicios</a></li>
-				<li><a href="Casos clinicos.html">Casos Clinicos</a></li>
-				<li><a href="Cursos.html">Cursos</a></li>
-				<li><a class="activo" href="Contacto.html">Contactanos</a></li>
-			</ul>	
-		</nav>	
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Inicio</a>
+			<a href="Servicios.html">Servicios</a>
+			<a href="Casos clinicos.html">Casos clinicos</a>
+			<a href="Cursos.html">Cursos</a>
+			<a href="Contacto.html" class="active">Contactanos</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		</div>	
 		
 	</header>
 
@@ -50,15 +53,15 @@
 
 		<section class="contacto">
 			<div class="contacto__texto">
-				<h3>Direccion</h3>
-				<p>Hipolito Yrigoyen 795. <br> Azul. Pcia. Buenos Aires</p>
 				<h3>Horarios</h3>
 				<ul>
 					<li>Lunes a viernes de 08 a 20 hs.</li>
 					<li>Sabados de 08 a 11 hs.</li> 
 				</ul>
-				<h3>Telefono</h3>
+				<h3>Teléfono</h3>
 				<p>02281-15590290</p>
+				<h3>Dirección</h3>
+				<p>Hipolito Yrigoyen 795. <br> Azul. Pcia. Buenos Aires</p>
 			</div>
 			<div class="contacto__mapa">
 				<iframe
@@ -72,6 +75,7 @@
 		<div class="contacto__form">
 			<form action="envia.php" method="POST" enctype="multipart/form-data">
 				<fieldset>
+					
 					<label for="nombreyapellido">Nombre y apellido</label>
 					<input type="text" name="nombreyapellido" maxlength="100">
 					<br>
@@ -80,14 +84,7 @@
 					<br>
 					<label for="NumContacto">Telefono de contacto</label>
 					<input type="text" name="NumContacto" maxlength="30">
-					<br>
-					<div>Soy Odontologo</div>
-					<input type="radio" name="profesion" value="odontologo" />
-					<div>Soy TPD</div>
-					<input type="radio" name="profesion" value="TPD" />
-					<br>
-
-					<h4>Tipo de Consulta</h4>
+										<label for="tipoconsulta">Tipo de consulta</label>
 					<select name="tipoconsulta">
 						<option value="servicios">Servicios</option>
 						<option value="cursos">Cursos</option>
@@ -96,7 +93,8 @@
 					<br>
 					<textarea name="consulta" cols="30" rows="10">Deje aquí su consulta</textarea>
 					<br>
-					<div>Quiero recibir lista de aranceles vigentes</div>
+					
+					<label for="aranceles">Quiero recibir lista de aranceles vigentes</label>
 					<input type="checkbox" name="aranceles" value="1">
 					<br>
 					<br>
@@ -109,8 +107,29 @@
 
 	<footer>
 
-		<div class="footer__menu">
-			
+		<div class="footer">
+
+			<div class="contacto__texto">
+				<h4>Direccion</h4>
+				<p>Hipolito Yrigoyen 795. <br> Azul. Pcia. Buenos Aires</p>
+				<h4>Horarios</h4>
+				<ul>
+					<li>Lunes a viernes de 08 a 20 hs.</li>
+					<li>Sabados de 08 a 11 hs.</li>
+				</ul>
+				<h4>Telefono</h4>
+				<p>02281-15590290</p>
+			</div>
+
+			<div class="footer__mapa">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.521632797769!2d-59.85918138497557!3d-36.78204178348283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959427716aa54f1b%3A0x7ea2bf60c71aedb4!2sHip%C3%B3lito%20Yrigoyen%20795%2C%20B7300%20Azul%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623349825718!5m2!1ses!2sar"
+					style="border:0;" allowfullscreen="" loading="lazy">
+				</iframe>
+			</div>
+
+			<div class="footer__menu">
+
 				<ul>
 					<li><a href="index.html">Conocenos</a></li>
 					<li><a href="Servicios.html">Nuestros servicios</a></li>
@@ -118,18 +137,33 @@
 					<li><a href="Cursos.html">Cursos</a></li>
 					<li><a href="Contacto.html">Contactanos</a></li>
 				</ul>
-			
-			
-			<div>
-				<h2>Seguinos en nuestras redes</h2>
+
+				<div>
+					<h3>Seguinos en nuestras redes</h3>
+				</div>
+				
+				<div>
+					<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i
+							class="flaticon-logotipo-de-instagram"></i></a>
+					<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i
+							class="flaticon-facebook"></i></a>
+				</div>
+
 			</div>
-			<div>
-				<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i class="flaticon-logotipo-de-instagram"></i></a>
-				<a href="https://www.facebook.com/groups/323880764375895/user/100001340641338/"><i class="flaticon-facebook"></i></a>
-			</div>
-		</div>	
-	
+		</div>
+
 	</footer>
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		</script>
 
 </body>
 
