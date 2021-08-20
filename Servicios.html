@@ -5,40 +5,56 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Fuentes-->
-		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-		<!--Iconos-->
-		<link rel="stylesheet" type="text/css" href="css/flaticon.css">
-		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Nuestros Servicios</title>
+
+	<!--Meta etiquetas/SEO-->
+	<meta name="description"
+		content="En Shigoto dental, contamos con la última tecnología, con personal capacitado y el conocimiento para ofrecerte servicios de calidad">
+	<meta name="keywords"
+		content="servicios dentales, calidad, tecnología, impresora 3d, sistema cadCAM, protesis fija, protesis removible, implantología, frezados, impresiones">
+
+	<!--Fuentes-->
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+	<!--Iconos-->
+	<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--FAvicon-->
+	<link rel="shortcut icon" href="imagenes/logo.ico" type="image/x-icon">
+
+
+	<title>SHIGOTO dental | Nuestros Servicios</title>
+
 </head>
 
 <body>
 	<header class="header">
 
-		<section class="header__logo" >
+		<section class="header__logo">
 			<div class="logo">
-				<a href="index.html"><img src="imagenes/logoshigoto.png" alt="logo"></a>
+				<a href="index.html"><img src="imagenes/logoshigoto.png"
+						alt="Logo que te lleva a la página principal"></a>
 			</div>
 			<div class=header__texto>
 				<h3>Laboratorio dental</h3>
 				<h4>especializado en estetica dental</h4>
 			</div>
 		</section>
-		
+
 		<div class="topnav" id="myTopnav">
 			<a href="index.html">Inicio</a>
-			<a href="Servicios.html"  class="active">Servicios</a>
+			<a href="Servicios.html" class="active">Servicios</a>
 			<a href="Casos clinicos.html">Casos clinicos</a>
 			<a href="Cursos.html">Cursos</a>
 			<a href="Contacto.html">Contactanos</a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			  <i class="fa fa-bars"></i>
+				<i class="fa fa-bars"></i>
 			</a>
-		  </div>
+		</div>
 
 	</header>
 	<main>
@@ -47,38 +63,39 @@
 				<h2>Nuestros Servicios</h2>
 			</div>
 		</div>
-	
+
 
 		<section class="servicios">
 
 			<div class="servicio">
 				<h2>Protesis fija</h2>
-				<img src="imagenes/protesisFija.jpg" alt="protesis fija inferior">
+				<img src="imagenes/protesisFija.jpg" alt="Somos expertos en protesis fija">
 			</div>
 
 			<div class="servicio">
 				<h2>Protesis Removible</h2>
-				<img src="imagenes/protesisRemovible.jpg" alt="protesis removible completa superior e inferior caracterizada">
+				<img src="imagenes/protesisRemovible.jpg"
+					alt="Protesis completas, caracterizadas">
 			</div>
 
 			<div class="servicio">
 				<h2>Implantología</h2>
-				<img src="imagenes/implantologia.jpg" alt="implanto">
+				<img src="imagenes/implantologia.jpg" alt="Realizamos implantes personalizados y protesis implanto-soportadas">
 			</div>
 
 			<div class="servicio">
 				<h2>Frezados</h2>
-				<img src="imagenes/frezado.jpg" alt="frezado">
+				<img src="imagenes/frezado.jpg" alt="Realizamos frezados en varios materiales">
 			</div>
 
 			<div class="servicio">
 				<h2>Impresiones</h2>
-				<img src="imagenes/impresion.jpg" alt="impresion">
+				<img src="imagenes/impresion.jpg" alt="Tenemos servicio de impresoras 3d">
 			</div>
-			
+
 		</section>
 	</main>
-	
+
 </body>
 
 
@@ -87,7 +104,7 @@
 	<div class="footer">
 
 		<div class="contacto__texto">
-			<h4>Direccion</h4>
+			<h4>Dirección</h4>
 			<p>Hipolito Yrigoyen 795. <br> Azul. Pcia. Buenos Aires</p>
 			<h4>Horarios</h4>
 			<ul>
@@ -118,7 +135,7 @@
 			<div>
 				<h3>Seguinos en nuestras redes</h3>
 			</div>
-			
+
 			<div>
 				<a href="https://www.instagram.com/rubenpastorino/?hl=es-la"><i
 						class="flaticon-logotipo-de-instagram"></i></a>
@@ -133,13 +150,13 @@
 
 <script>
 	function myFunction() {
-	  var x = document.getElementById("myTopnav");
-	  if (x.className === "topnav") {
-		x.className += " responsive";
-	  } else {
-		x.className = "topnav";
-	  }
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
 	}
-	</script>
+</script>
 
 </html>

@@ -50,6 +50,11 @@
             font-size: 2rem;
         }
 
+        @media screen and (max-width:576px) {
+            font-size: 1.5rem;
+            
+        }
+
     }
 }
 
@@ -122,6 +127,12 @@
             font-size: 1rem;
         }
 
+        @media screen and (max-width:576px) {
+            font-size: 14px;
+            
+        }
+
+       
     }
 
     span {
@@ -129,10 +140,16 @@
             font-family: $font-pr;
             text-decoration: none;
             background-color: $bg-1;
-            color: #fff;
+            color: #282828;
+            font-weight: bold;
             padding: 5px 10px;
             margin: 10px 10px;
             border-radius: 10px;
+
+            @media screen and (max-width:576px) {
+                font-size: 14px;
+                
+            }
         }
     }
 
